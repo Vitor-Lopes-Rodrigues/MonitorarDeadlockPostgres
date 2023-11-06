@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  deadlock-monitor:
+    image: cenpros/deadlock-monitor
+    restart: always
+    volumes:
+      - ./logs:/var/logs
+    environment:
+      - TZ=America/Sao_Paulo
